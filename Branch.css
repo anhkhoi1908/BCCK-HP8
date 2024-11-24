@@ -1,3 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+
+.tabs {
+    display: flex;
+    position: relative;
+  }
+.tabs .line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    border-radius: 15px;
+    background-color: rgb(255 245 235);
+    transition: all 0.2s ease;
+  }
+.tab-item {
+    min-width: 80px;
+    padding: 16px 20px 11px 20px;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(214 162 113);
+    background-color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 5px solid transparent;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+.tab-icon {
+    font-size: 24px;
+    width: 32px;
+    position: relative;
+    top: 2px;
+  }
+.tab-item:hover {
+    opacity: 1;
+    background-color: rgba(194, 53, 100, 0.05);
+    border-color: rgba(194, 53, 100, 0.1);
+  }
+.tab-item.active {
+    opacity: 1;
+  }
+.tab-content {
+    padding: 28px 0;
+  }
+  tab-pane {
+    color: #333;
+    display: none;
+  }
+.tab-pane.active {
+    display: block;
+  }
+.tab-pane h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+.tab-content h2{
+    color: rgb(27 55 101);
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.tab-content button{
+    border-radius: 9999px;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    padding: .875rem 2rem;
+    text-align: center;
+    background-color: rgb(204 228 250);
+    color: rgb(54 99 171);
+    
+}
+
+
+.tab-content img{
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    margin-top: 0.6rem;
+}
+  
+
+
+
 .ChiNhanh{
     background-color: rgb(255 245 235);
     max-width: 100%;
@@ -61,4 +154,47 @@
     margin-left: 0.3rem;
     margin-right: 0.3rem;
     margin-top: 0.6rem;
+}
+
+.border{
+    margin-top: 3rem;
+    width: 1310px;
+    background-color: rgb(254 238 220);
+   
+}
+
+.border button{
+    margin-top: 1.5rem;
+    background-color: rgb(184 130 87);
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    padding: .875rem 2rem;
+    text-align: center;
+    color: rgb(255 255 255);
+}
+
+.border h2{
+    margin-top: 1.5rem;
+    margin-left: 3rem;
+    color: rgb(62 38 19);
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.border p{
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+    color: rgb(62 38 19);
+}
+
+.border button{
+    margin-left: 3rem;
+}
+
+.border img{
+    width: 403px;
+    height: 285px;
 }
