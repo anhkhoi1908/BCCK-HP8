@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./Branch.css">
+    <link rel="stylesheet" href="./styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -16,15 +17,20 @@
 </head>
 <body>
     <!-- ---- Header ---- -->
-    <div class="header">
-        <nav class="nav justify-content-center align-items-center">
+    <div class="header">    
+        <nav class="nav justify-content-around align-items-center">
             <img class="logo_header " src="https://chidori.vn/assets/logo-69c0a25c2a5de159565768e592c9efd3c4f91c9b79e42d8c9a5107ad85ba28fc.png" alt="">
-            <a class="nav-link link-dark" href="#">chi nhánh</a>
-            <a class="nav-link link-dark" href="#">làm việc tại chidori</a>
-            <a class="nav-link link-dark" href="#">thành viên</a>
-            <a class="nav-link link-dark" href="#">về chúng tôi</a>
-            <a class="nav-link link-dark" href="#">blog</a>
-            <a class="nav-link link-dark" href="#">VN|EN</a>
+
+            <div class="d-flex">
+                <a class="nav-link link-dark" href="#">Chi nhánh</a>
+                <a class="nav-link link-dark" href="#">Làm việc tại Chidori</a>
+                <a class="nav-link link-dark" href="#">Thành viên</a>
+                <a class="nav-link link-dark" href="#">Về chúng tôi</a>
+                <a class="nav-link link-dark" href="#">Blog</a>
+                <a class="nav-link link-dark" href="#">VN|EN</a>
+
+            </div>
+
             <a class="btn_booking link-light d-flex align-items-center" href="./booking_form.html">
                 Đặt chỗ trước
             </a> 
@@ -78,31 +84,31 @@
         <!-- Tab items -->
         <div class="container tabs">
           <div class="tab-item active">
-            <i class="tab-icon fas fa-code"></i>
+            
             Café Space
           </div>
           <div class="tab-item">
-            <i class="tab-icon fas fa-cog"></i>
+          
             Study Box
           </div>
           <div class="tab-item">
-            <i class="tab-icon fas fa-plus-circle"></i>
+           
             Meeting Room
           </div>
           <div class="tab-item">
-            <i class="tab-icon fas fa-pen-nib"></i>
+           
             Level Seat
           </div>
           <div class="tab-item">
-            <i class="tab-icon fas fa-cog"></i>
+           
             Coffee in Bed
           </div>
           <div class="tab-item">
-            <i class="tab-icon fas fa-cog"></i>
+            
             Studio Bed
           </div>
           <div class="tab-item">
-            <i class="tab-icon fas fa-cog"></i>
+            
             Private Room
           </div>
           <div class="line"></div>
@@ -206,7 +212,7 @@
                     </div>
                     <div>
                         <button type="button" class="btn px-5">Xem chi tiết</button>
-                        <button type="button" class="btn px-5" style="background-color: rgb(54 99 171); color: rgb(255 255 255); margin-top: 1rem;">Đặt Meeting Room</button>
+                        <button type="button" class="btn px-5" style="background-color: rgb(54 99 171); color: rgb(255 255 255);">Đặt Meeting Room</button>
                     </div>
                 </div>
             </div>
@@ -241,7 +247,7 @@
                     </div>
                     <div>
                         <button type="button" class="btn px-5">Xem chi tiết</button>
-                        <button type="button" class="btn px-5" style="background-color: rgb(54 99 171); color: rgb(255 255 255); margin-top: 1rem;">Đặt Level Seat</button>
+                        <button type="button" class="btn px-5" style="background-color: rgb(54 99 171); color: rgb(255 255 255);">Đặt Level Seat</button>
                     </div>
                 </div>
             </div>
@@ -279,7 +285,7 @@
                     </div>
                     <div>
                         <button type="button" class="btn px-5">Xem chi tiết</button>
-                        <button type="button" class="btn px-5" style="background-color: rgb(54 99 171); color: rgb(255 255 255); margin-top: 1rem;">Đặt Coffee in Bed</button>
+                        <button type="button" class="btn px-5" style="background-color: rgb(54 99 171); color: rgb(255 255 255);">Đặt Coffee in Bed</button>
                     </div>
                 </div>
             </div>
@@ -317,7 +323,7 @@
                     </div>
                     <div>
                         <button type="button" class="btn px-5">Xem chi tiết</button>
-                        <button type="button" class="btn px-5" style="background-color: rgb(54 99 171); color: rgb(255 255 255); margin-top: 1rem;">Đặt Studio Bed</button>
+                        <button type="button" class="btn px-5" style="background-color: rgb(54 99 171); color: rgb(255 255 255);">Đặt Studio Bed</button>
                     </div>
                 </div>
             </div>
@@ -352,7 +358,7 @@
                     </div>
                     <div>
                         <button type="button" class="btn px-5">Xem chi tiết</button>
-                        <button type="button" class="btn px-5" style="background-color: rgb(54 99 171); color: rgb(255 255 255); margin-top: 1rem;">Đặt Private Room</button>
+                        <button type="button" class="btn px-5" style="background-color: rgb(54 99 171); color: rgb(255 255 255);">Đặt Private Room</button>
                     </div>
                 </div>
             </div>
@@ -364,7 +370,7 @@
     <div>
         <div class="ChiNhanh">
             <div class="container d-flex justify-content-center">
-                <h2 class="title">Chi nhánh Chidori</h2>
+                <h1 class="title">Chi nhánh Chidori</h1>
             </div>
 
             <div class="container d-flex justify-content-center">
@@ -375,7 +381,7 @@
                 <div class="card col-lg-6">
                     <img src="https://chidori.vn/assets/locations/chidori_vinh_vien/1-c9886405f2ec0218daf01c43675c30ccec113f79cb768e81e51e153fbd30c4b2.jpg" class="card-img-top" alt="">
                     <div class="card-body">
-                      <h5 class="card-title">Chidori Vĩnh Viễn</h5>
+                      <h2 class="card-title">Chidori Vĩnh Viễn</h2>
                       <p class="card-text">Sự giao hòa của cũ và mới, trong sự kết nối giữa những điều truyền thống với nét trẻ trung của một quận 10 sôi động.</p>
                     </div>
                 </div>
@@ -383,7 +389,7 @@
                 <div class="card col-lg-6">
                     <img src="https://chidori.vn/assets/locations/chidori_vo_oanh/1-03a1e0d2500f8853c94063b232422892a60d79509de8c0e89c28d4d956f0619d.jpg" class="card-img-top" alt="">
                     <div class="card-body">
-                      <h5 class="card-title">Chidori Võ Oanh</h5>
+                      <h2 class="card-title">Chidori Võ Oanh</h2>
                       <p class="card-text">Sự riêng biệt thông qua thiết kế, mong muốn có thể cho bạn trải nghiệm đa dạng ở cùng một nơi chốn ghé đến.</p>
                     </div>
                 </div>
@@ -399,7 +405,7 @@
                     <div class="card col-lg-6">
                         <img src="https://www.chidori.vn/assets/locations/chidori_le_dai_hanh/1-833fd1d851f027a0ce3fa346f2bd6315c3a68743200ea287dda30a5e7e9b2507.jpg" class="card-img-top" alt="">
                         <div class="card-body">
-                          <h5 class="card-title">Chidori Lê Đại Hành</h5>
+                          <h2 class="card-title">Chidori Lê Đại Hành</h2>
                           <p class="card-text">Sự bình yên cùng những mảng xanh tươi tốt, nhẹ nhàng hiện diện giữa con đường tấp nập vương chút màu thời gian.</p>
                         </div>
                     </div>
@@ -407,7 +413,7 @@
                     <div class="card col-lg-6">
                         <img src="https://www.chidori.vn/assets/locations/chidori_trieu_quang_phuc/1-dff838a9be6b1401fabc39b94bb5700a99954b3501a83a81ccaec6eb91c61419.jpg" class="card-img-top" alt="">
                         <div class="card-body">
-                          <h5 class="card-title">Chidori Triệu Quang Phục</h5>
+                          <h2 class="card-title">Chidori Triệu Quang Phục</h2>
                           <p class="card-text">Sự hòa quyện tinh tế giữa truyền thống và hiện đại, giữa hoài niệm và đổi mới, mang đến cho bạn cảm giác an nhiên, thư thái.</p>
                         </div>
                     </div>
@@ -417,7 +423,7 @@
                     <div class="card col-lg-6">
                         <img src="https://chidori.vn/assets/locations/chidori_vinh_vien/1-c9886405f2ec0218daf01c43675c30ccec113f79cb768e81e51e153fbd30c4b2.jpg" class="card-img-top" alt="">
                         <div class="card-body">
-                          <h5 class="card-title">Chidori Vĩnh Viễn</h5>
+                          <h2 class="card-title">Chidori Vĩnh Viễn</h2>
                           <p class="card-text">Sự giao hòa của cũ và mới, trong sự kết nối giữa những điều truyền thống với nét trẻ trung của một quận 10 sôi động.</p>
                         </div>
                     </div>
@@ -425,7 +431,7 @@
                     <div class="card col-lg-6">
                         <img src="https://chidori.vn/assets/locations/chidori_vo_oanh/1-03a1e0d2500f8853c94063b232422892a60d79509de8c0e89c28d4d956f0619d.jpg" class="card-img-top" alt="">
                         <div class="card-body">
-                          <h5 class="card-title">Chidori Võ Oanh</h5>
+                          <h2 class="card-title">Chidori Võ Oanh</h2>
                           <p class="card-text">Sự riêng biệt thông qua thiết kế, mong muốn có thể cho bạn trải nghiệm đa dạng ở cùng một nơi chốn ghé đến.</p>
                         </div>
                     </div>
@@ -435,7 +441,7 @@
                     <div class="card col-lg-6">
                         <img src="https://chidori.vn/assets/locations/chidori_pasteur/1-6d6f905925a3cc7cd2986b6fb6f2a49dbcdd8b690a502ed2a742d7508347798a.jpg" class="card-img-top" alt="">
                         <div class="card-body">
-                          <h5 class="card-title">Chidori Pasteur</h5>
+                          <h2 class="card-title">Chidori Pasteur</h2>
                           <p class="card-text">Sự hiện đại để kết nối với nhịp sống sôi động của khu vực trung tâm Sài Gòn, cũng là nơi để nghỉ ngơi theo sở thích.</p>
                         </div>
                     </div>
@@ -443,7 +449,7 @@
                     <div class="card col-lg-6">
                         <img src="https://chidori.vn/assets/locations/chidori_su_van_hanh/1-d670018acff2e3a03e243a52f22ca49d0989f473a27bc108997a7c7d3642646f.jpg" class="card-img-top" alt="">
                         <div class="card-body">
-                          <h5 class="card-title">Chidori Sư Vạn Hạnh</h5>
+                          <h2 class="card-title">Chidori Sư Vạn Hạnh</h2>
                           <p class="card-text">Không gian cho những ngày tất bật, khi bạn muốn tìm một nơi có thể tiếp sức cho quá trình làm việc luôn thật nhiều năng lượng.</p>
                         </div>
                     </div>
@@ -453,7 +459,7 @@
                     <div class="card col-lg-6">
                         <img src="https://chidori.vn/assets/locations/chidori_dinh_tien_hoang/1-35910d93d3a94509eeca1d2094e9937a6a187ee9e0cbd24efe335dda2cf40990.jpg" class="card-img-top" alt="">
                         <div class="card-body">
-                          <h5 class="card-title">Chidori Đinh Tiên Hoàng</h5>
+                          <h2 class="card-title">Chidori Đinh Tiên Hoàng</h2>
                           <p class="card-text">Sự nhỏ nhắn, phất phơ trước hiên chiếc rèm kiểu Nhật như ghi dấu giữa lòng thành phố về một chốn an yên.</p>
                         </div>
                     </div>
@@ -461,7 +467,7 @@
                     <div class="card col-lg-6">
                         <img src="https://chidori.vn/assets/locations/chidori_lam_son/1-75b5e80e28b8387ca73c8027ab0722538e3bfc14523b94aba5ae7941ffaeaacf.jpg" class="card-img-top" alt="">
                         <div class="card-body">
-                          <h5 class="card-title">Chidori Lam Sơn</h5>
+                          <h2 class="card-title">Chidori Lam Sơn</h2>
                           <p class="card-text">Trạm dừng chân với gối tựa êm ái, trà bánh ngọt thơm tiếp sức cho bạn trước và sau những chuyến bay dài.</p>
                         </div>
                     </div>
@@ -471,7 +477,7 @@
                     <div class="card col-lg-6">
                         <img src="https://chidori.vn/assets/locations/chidori_hoa_cau/1-642048ff00c0719d9ab0671a03a56fa3124baae1b8c1172b2ed508c2c23fdfc5.jpg" class="card-img-top" alt="">
                         <div class="card-body">
-                          <h5 class="card-title">Chidori Hoa Cau</h5>
+                          <h2 class="card-title">Chidori Hoa Cau</h2>
                           <p class="card-text">Sự yên tĩnh nằm bên trong một con hẻm nhỏ, cùng phần hiên nhà xanh mát.</p>
                         </div>
                     </div>
@@ -483,7 +489,7 @@
     <div>
         <div class="HinhAnh">
             <div class="container d-flex justify-content-center">
-                <h2 class="title">Bạn thương ghé thăm Chidori</h2>
+                <h1 class="title">Bạn thương ghé thăm Chidori</h1>
             </div>
 
             <div class="container d-flex justify-content-center">
@@ -535,17 +541,80 @@
         </div>
     </div>
 
-    <div>
+    <!-- ---- Members ---- -->
+    <div style="margin-top: 10rem;">
         <div class="ThanhVien">
-            <div class="border" style="margin: auto;">
-                <div class="container d-flex justify-content-center">
+            <div class="border" style="margin: auto; margin-top: 3rem; border-radius: 2rem;">
+                <div class="d-flex justify-content-center">
                     <div>
-                        <h2>Bạn đã đăng ký thành viên của Chidori chưa?</h2>
+                        <h1 style="margin-top: 3rem; margin-left: 3rem; font-weight: bold;">Bạn đã đăng ký thành viên của Chidori chưa?</h1>
                         <p>Chidori trân quý những người bạn thân thiết đã luôn đồng hành và ủng hộ Chidori suốt thời gian qua. Với mong muốn có thể mang đến cho bạn những giá trị tốt hơn mỗi ngày, Chidori đã cải tiến chương trình tích lũy điểm thành viên để bạn có thể nhận nhiều ưu đãi và quyền lợi đặc biệt mỗi khi sử dụng dịch vụ.</p>
                         <button type="button" class="btn rounded-pill">Xem chương trình thành viên</button>
                     </div>
 
                     <img src="https://chidori.vn/assets/home/membership-2207b09476fea69a020d7a27d063cfe10d187e2b3ff16271c395ddd2cb6adf2a.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <!-- ---- Footer ---- -->
+    <div class="footer">
+        <div class="background-footer row">
+            <div class="col-lg-3">
+                <img src="https://chidori.vn/assets/logo-white-9d84a8f7ae91bbbe77f7f8b075bf1cac6f96f640ae6749d0464a42e1ad42b9d8.svg" alt="  ">
+                <br>
+                <p class="color_footer"> The authentic coffee in the bed® in japan</p>
+            </div>
+
+            <div class="col-lg-3">
+                <p class="color_footer">___</p>
+                
+                <p class="color_footer">Chi Nhánh</p>
+                
+                <p class="color_footer">Về chúng tôi</p>
+                
+                <p class="color_footer">làm việc tại chidori</p>
+                
+                <p class="color_footer">Blog</p>
+                
+            </div>
+
+            <div class="col-lg-3">
+                <p class="color_footer">___</p>
+                
+                <p class="color_footer">Menu</p>
+                
+                <p class="color_footer">thành viên</p>
+                
+                <p class="color_footer">nội quy</p>
+                
+            </div>
+
+            <div class="col-lg-3">
+                <p class="color_footer">___</p>
+
+                <div class="color_footer">
+                    <i class="fa-brands fa-facebook"></i> 
+                    <p class="" href="">012 3456789</p>
+                </div>
+                
+
+                <div class="color_footer">
+                    <i class="fa-solid fa-phone"></i>
+                    <p class="" href="">hi_chidori@gmail.com</p>
+                </div>
+                
+
+                <div class="color_footer">
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                    <p class="" href="">m.me/chidori.vn</p>
+                </div>
+                
+
+                <div class="color_footer">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p class="" href="">chidori.vn</p>
                 </div>
             </div>
         </div>
@@ -581,6 +650,26 @@
             };
         });
     </script>
+
+    <style>
+    .background-footer{
+       font-size: 19px;
+       padding: 50px;
+       width: 100%;
+    }
+
+    .footer{
+        /* position:absolute; */
+        margin-top: 8rem;
+        bottom:0;
+        width:100%;
+        background-color: #295F98;
+    }
+
+    .color_footer{
+        color: white;
+    }
+    </style>
 
     <style>
         :root {
