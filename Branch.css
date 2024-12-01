@@ -16,7 +16,7 @@
     width: 0;
     height: 6px;
     border-radius: 15px;
-    background-color: rgb(255 245 235);
+    background-color: rgb(214 162 113);
     transition: all 0.2s ease;
   }
 .tab-item {
@@ -24,7 +24,7 @@
     padding: 16px 20px 11px 20px;
     font-size: 20px;
     text-align: center;
-    color: rgb(214 162 113);
+    color: rgb(147 106 78);
     background-color: #fff;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
