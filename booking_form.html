@@ -8,32 +8,143 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <input type="date">
-   
-
-    <h1 class="text-center">Chidori — Đặt chỗ online</h1>
-
-    <div class="card m-auto " style="width: 40rem;">
-        <h1 class="card-title "> Thông tin liên lạc</h1>
-        <div class="card-body">
-            <p class="card-text">Số Điện Thoại*</p>
-            <input type="text" class="input_all">
-            
-        </div>    
+    <div class='container'>
+        <div class='text-center my-5'>
+            <h1 class='font-weight-bold'>Chidori - Đặt chỗ online</h1>
+        </div>
+        <form method='POST' action='/bookings/create' class='form-booking mx-auto overflow-hidden px-0 my-5'>
+            <div class='d-flex flex-column align-items-center'>
+                <div class='form-booking-item col-lg-6 px-0 overflow-hidden'>
+                    <div class='form-header text-white py-3 px-4'>
+                        <h2>Thông tin liên lạc</h2>
+                    </div>
+                    <div class='form-body px-4 my-4'>
+                        <div class='form-row d-flex'>
+                            <div class='form-group col-lg-6'>
+                                <label for=''>SỐ ĐIỆN THOẠI</label>
+                                <input type='text' class='form-control' id='phone' name='phone' required />
+                            </div>
+                            <div class='form-group col-lg-6'>
+                                <label for=''>HỌ VÀ TÊN</label>
+                                <input type='text' class='form-control' id='name' name='name' required />
+                            </div>
+                        </div>
+                        <div class='form-row'>
+                            <div class='form-group col-lg'>
+                                <label for=''>EMAIL</label>
+                                <input type='email' class='form-control' id='email' name='email' pla required />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='form-booking-item col-lg-6 px-0 overflow-hidden'>
+                    <div class='form-header text-white py-3 px-4'>
+                        <h2>Thông tin đặt chỗ</h2>
+                    </div>
+                    <div class='form-body px-4 my-4'>
+                        <div class='form-row'>
+                            <div class='form-group col-lg'>
+                                <label for=''>CHI NHÁNH</label>
+                                <select id='campus' name='campus' class='form-control' required>
+                                    <option selected>Chọn chi nhánh bạn muốn ghé thăm</option>
+                                    {{#each branches}}
+                                        <option>
+                                            <p>{{this.name}}</p>
+                                            <p>{{this.address}}</p>
+                                        </option>
+                                    {{/each}}
+                                </select>
+                            </div>
+                        </div>
+                        <div class='form-row d-flex'>
+                            <div class='form-group col-lg-4'>
+                                <label for=''>NGÀY ĐẾN</label>
+                                <input type='date' class='form-control' id='daycome' name='daycome' required />
+                            </div>
+                            <div class='form-group col-lg-4'>
+                                <label for=''>GIỜ ĐẾN</label>
+                                <select id='hour' name='hour' class='form-control' required>
+                                    <option selected>Chọn giờ</option>
+                                    <option>08</option>
+                                    <option>09</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                    <option>13</option>
+                                    <option>14</option>
+                                    <option>15</option>
+                                    <option>16</option>
+                                    <option>17</option>
+                                    <option>18</option>
+                                    <option>19</option>
+                                </select>
+                            </div>
+                            <div class='form-group col-lg-4'>
+                                <label for='' class='text-white'>GIỜ ĐẾN</label>
+                                <select id='minute' name='minute' class='form-control' required>
+                                    <option selected>Chọn phút</option>
+                                    <option>00</option>
+                                    <option>05</option>
+                                    <option>10</option>
+                                    <option>15</option>
+                                    <option>20</option>
+                                    <option>25</option>
+                                    <option>30</option>
+                                    <option>35</option>
+                                    <option>40</option>
+                                    <option>45</option>
+                                    <option>50</option>
+                                    <option>55</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class='form-row'>
+                            <div class='form-group col-lg'>
+                                <label for=''>BẠN MUỐN GHÉ THĂM CHIDORI BAO LÂU?</label>
+                                <select id='combo' name='combo' class='form-control'>
+                                    <option selected>Chọn combo bạn muốn sử dụng</option>
+                                    {{#each combos}}
+                                        <option>{{this.name}}</option>
+    
+                                        {{!-- {{#if this.service="Private Room"}}
+                                            {{this.name}}
+                                        {{/if}} --}}
+                                    {{/each}}
+                                </select>
+                            </div>
+                        </div>
+                        <div class='form-row'>
+                            <div class='form-group col-lg'>
+                                <label for=''>LỜI NHẮN </label>
+                                <textarea type='text' class='form-control' id='note' name='note'></textarea>
+                            </div>
+                        </div>
+                        <div class='text-center'>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <div class='d-flex flex-column justify-content-center align-items-center'>
+                <!-- <button class="btn btn-primary rounded-pill p-4" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Chọn phương thức thanh toán
+                </button> -->
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    </div>
+                </div>
+                <button type='submit' class='btn btn-primary rounded-pill p-4'>Đặt chỗ</button>
+            </div>
+        </form>
     </div>
-
-    <div class="card m-auto " style="width: 40rem;">
-        <h1 class="card-title "> Thông tin đặt chỗ</h1>
-        <div class="card-body">
-            <p class="card-text">Số Điện Thoại*</p>
-            <input type="text" class="input_all">
-            
-        </div>    
-    </div>
+    
+    <style>
+        .form-booking-item { border: 2px solid #936a4e; border-radius: 1rem; margin-bottom: 4rem;} .form-header {
+        background-color: #936a4e;} input, textarea, select { background-color: #FFF5EB !important; border-color: #f9e4cd
+        !important; border-bottom: 1px solid #936a4e !important;} .form-row {padding-bottom: 1rem;}
+    </style>
       
-
-
-
     <style>
         .card{
             background-color: #825B32;
@@ -56,6 +167,7 @@
            
         }
     </style>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
